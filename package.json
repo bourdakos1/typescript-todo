@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "openapi-comment-parser": "^0.3.2",
+    "openapi-comment-parser": "^0.3.3",
     "swagger-ui-express": "^4.1.4",
     "uuid": "^8.1.0"
   }
