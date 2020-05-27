@@ -1,0 +1,9 @@
+components:
+  schemas:
+    Todo:
+      type: object
+      properties:
+        message:
+          type: string
+        complete:
+          type: boolean
