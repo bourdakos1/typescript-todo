@@ -1,15 +1,18 @@
-# typescript-todo
+# Set up an Express TypeScript server
 
-Why node and why typescript?
+## TL;DR
+```
+git clone https://github.com/bourdakos1/typescript-todo.git
+yarn install
+yarn start
+```
 
 ## Setup Node and a package manager
-get node
-https://nodejs.org
+If you don't already have Node installed the easiest way to get it is from the
+[Node.js website](https://nodejs.org).
 
-I use nvm to easily switch between node versions
-https://github.com/nvm-sh/nvm
-
-https://github.com/coreybutler/nvm-windows
+I personally use [nvm](https://github.com/nvm-sh/nvm) (or[nvm-windows](https://github.com/coreybutler/nvm-windows)).
+It is the recommend way to install Node so you can easily switch between different versions.
 
 In order to easily install things, you need a package manager. By default Node
 comes with `npm`, but I prefer `yarn`. You can install yarn with:
