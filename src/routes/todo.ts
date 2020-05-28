@@ -17,7 +17,7 @@ let todo: Todo[] = [];
  * @queryParam {boolean} [complete] - Filter by complete.
  * @response 200 - OK
  */
-router.get("/todo", (req, res) => {
+router.get("/", (req, res) => {
   const { complete } = req.query;
 
   // If no complete query parameter, return all todo.
@@ -37,7 +37,7 @@ router.get("/todo", (req, res) => {
  * @bodyRequired
  * @response 200 - OK
  */
-router.post("/todo", (req, res) => {
+router.post("/", (req, res) => {
   // Create a new todo.
   const newTodo = { id: uuid4(), message: req.body, complete: false };
 
@@ -56,7 +56,7 @@ router.post("/todo", (req, res) => {
  * @response 200 - OK
  * @response 400 - Invalid ID supplied
  */
-router.put("/todo/:id", (req, res) => {
+router.put("/:id", (req, res) => {
   const { id } = req.params;
 
   // Find todo by id.
@@ -85,7 +85,7 @@ router.put("/todo/:id", (req, res) => {
  * @response 200 - OK
  * @response 400 - Invalid ID supplied
  */
-router.delete("/todo/:id", (req, res) => {
+router.delete("/:id", (req, res) => {
   const { id } = req.params;
 
   // Find todo by id.
@@ -108,7 +108,7 @@ router.delete("/todo/:id", (req, res) => {
  * @response 200 - OK
  * @response 400 - Invalid ID supplied
  */
-router.get("/todo/:id", (req, res) => {
+router.get("/:id", (req, res) => {
   const { id } = req.params;
 
   // Find todo by id.

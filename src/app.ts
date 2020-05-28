@@ -13,7 +13,7 @@ app.use(express.text());
 const spec = openapi({ cwd: __dirname });
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(spec));
 
-app.use(todoRouter);
+app.use("/todo", todoRouter);
 
 // Catch 404s.
 app.use((req, res) => {

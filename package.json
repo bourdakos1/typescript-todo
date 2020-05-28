@@ -8,6 +8,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "lint": "eslint . --ext .ts",
+    "pretty": "pettier . --write",
     "copy": "copyfiles -u 1 src/**/*.yml dist",
     "compile": "tsc",
     "build": "run-s clean compile copy",
@@ -24,6 +25,7 @@
     "eslint-plugin-openapi": "^0.0.3",
     "nodemon": "^2.0.4",
     "npm-run-all": "^4.1.5",
+    "prettier": "2.0.5",
     "rimraf": "^3.0.2",
     "ts-node": "^8.10.1",
     "typescript": "^3.9.3"
