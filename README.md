@@ -11,7 +11,7 @@ yarn start
 If you don't already have Node installed the easiest way to get it is from the
 [Node.js website](https://nodejs.org).
 
-I personally use [nvm](https://github.com/nvm-sh/nvm) (or[nvm-windows](https://github.com/coreybutler/nvm-windows)).
+I personally use [nvm](https://github.com/nvm-sh/nvm) (or [nvm-windows](https://github.com/coreybutler/nvm-windows)).
 It is the recommend way to install Node so you can easily switch between different versions.
 
 In order to easily install things, you need a package manager. By default Node
@@ -24,10 +24,10 @@ npm install -g yarn
 
 Create a folder with the name of your project. I named mine `typescript-todo`.
 
-A Node project should have a `package.json`, this contains all the metadata for
-your project like it's name, homepage, license, etc. It also contains inforation
-about the dependencies it requires and allows you to include useful scripts to
-be run for things like building, testing and linting.
+A Node.js project should have a `package.json`. This contains all the metadata for
+your project like its name, homepage, license, etc. It also contains information
+about the dependencies it requires, and allows you to include useful scripts to
+be run for tasks like building, testing and linting.
 
 We can create the `package.json` by hand or run `yarn init` to interactively 
 generate it for us.
@@ -125,7 +125,7 @@ yay our first typescript application 🎉
 
 ## Setting up a good development environment
 In order to have a pleasent development experience, we want to set up things like
-linting, code formatting and automatic re-running.
+linting, code formatting, and automatic re-running.
 
 ### Linting
 Linting is your extra set of eyes that never get tired. It will help you catch 
@@ -137,7 +137,7 @@ trailing commas.
 For linting we will be using a package called `eslint`.
 
 ### Code formatting
-Code formatting is where we handle awkward spacing, missing semicolons and trainling 
+Code formatting is where we handle awkward spacing, missing semicolons and trailing 
 commas. Code formatting doesn't yell at you, it just fixes it. Code formatting is
 commonly set up so that anytime you save the file, it gets prettified. 
 
@@ -179,7 +179,7 @@ We also need to create a file called `.eslintrc.json`:
 
 **options**
 - `root`: If `true`, eslint stops looking for `eslintrc` files in parent directories. It's good practice to have this set in the root of your project.
-- `extends`: A list of eslint configs to extend from. These configs have a recommended set of rules enabled. Additionally `@typescript-eslint` enables the custom parser we installed.
+- `extends`: A list of eslint configs from which to extend. These configs have a recommended set of rules enabled. Additionally `@typescript-eslint` enables the custom parser we installed.
 - `rules`: An optional list of additional rules to turn on/off.
 
 > **Note:** We turned off `prefer-const` which is a [highly debated topic](https://overreacted.io/on-let-vs-const/). It requires you to
