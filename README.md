@@ -1,4 +1,4 @@
-# Set up an Express TypeScript server
+# How to build a TypeScript server
 
 ## TL;DR
 ```
